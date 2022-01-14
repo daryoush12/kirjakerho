@@ -1,0 +1,72 @@
+﻿=----------------------------------------
+= Ohjelmointi 2, 2019, vaihe 6
+=----------------------------------------
+= Katso <a href=".." target="_top">työ vaiheittain</a>
+=
+@https://trac.cc.jyu.fi/projects/ohj2ht/browser/k2019/psvaltus = Työ versionhallinnassa
+=
+= <h3>Ohjelman avustus</h3>
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/psvaltus = Suunnitelma + avustus TIMissä
+=
+kuvat/paaikkunaksb.png = ohjelman pääikkuna
+kuvat/avaaksb.png      = kuva ohjelman alusta
+kuvat/eiaukeaksb.png   = virheilmoitus jos tiedostoa ei ole
+kuvat/kirjat.png     = kuva kirjaikkunasta
+kuvat/kerhohar.png  = kuva tietojärjestelmästä
+=
+= <h3>Ajettava ohjelma</h3>
+kerho.jar = ajettava ohjelma, lataa ja aja
+=
+= <h3>Ohjelman esisuunnitelma</h3>
+@https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/psvaltus = Suunnitelma TIMissä
+=
+kuvat/avaak1.png = kuva ohjelman alusta (käsin piirretty)
+kuvat/eiaukeak1.png = virheilmoitus jos tiedostoa ei ole (kp)
+kuvat/paaikkunak1.png = ohjelman pääikkunan (kp)
+=
+= <h3>Käyttöliittymän ulkoasu JavaFX:llä</h3>
+kirjakerho/src/fxKerho/KerhoMain.java = ohjellman käynnistävä pääluokka
+kirjakerho/src/fxKerho/KerhoGUIView.fxml =kerhon varsinainen käyttöliittymä
+kirjakerho/src/fxKerho/KerhoGUIController.java = ohjain joka käsittelee käyttöliittymästä tulevat tapahtumat
+kirjakerho/src/fxKerho/kerho.css = tyylitiedosto (ei vielä muutettu mitään)
+kirjakerho/src/fxKerho/EiAukeaView.fxml = dialogi joka tulee kun rekisteriä ei löydy
+kirjakerho/src/fxKerho/KerhonNimiView.fxml = dialogi jolla kysytään kerhon nimi
+kirjakerho/src/fxKerho/KerhoKirjatView.fxml = ikkuna kirjoista
+kirjakerho/src/fxKerho/KerhoLainatView.fxml = ikkuna lainoista
+kirjakerho/src/fxKerho/TulostusController.java = tulostuksen kontrolleri
+kirjakerho/src/fxKerho/TulostusView.fxml = tulostusikkuna
+kirjakerho/src/fxKerho/KerhoKirjatController.java = kirjaikkunan kontrolleri
+kirjakerho/src/fxKerho/KerhoLainatController.java = lainaikkunan kontrolleri
+kirjakerho/src/fxKerho/JasenDialogController.java = jäsendialogin kontrolleri
+kirjakerho/src/fxKerho/JasenDialogView.fxml = jäsendialogin ikkuna
+kirjakerho/src/fxKerho/KirjaDialogController.java = kirjadialogin kontrolleri
+kirjakerho/src/fxKerho/KirjaDialogView.fxml = kirjadialogin ikkuna
+
+=
+= <h3>Kerho-paketin java-luokat</h3>
+kirjakerho/src/kerho/Jasen.java = Jasen-luokka
+kirjakerho/src/kerho/Jasenet.java = Jasenet-luokka
+kirjakerho/src/kerho/Kirja.java = Kirja-luokka
+kirjakerho/src/kerho/Kirjat.java = Kirjat-luokka
+kirjakerho/src/kerho/Kerho.java = Kerho-luokka
+kirjakerho/src/kerho/PoikkeusException.java = poikkeuksille oleva luokka
+kirjakerho/src/kerho/Laina.java = Laina-luokka
+kirjakerho/src/kerho/Lainat.java = Lainat-luokka
+
+= <h3>Testit</h3>
+kirjakerho/src/test/AllTests.java = AllTests
+
+=
+= <h3>Kerho-paketin tiedostot</h3>
+kirjakerho/jasenet.dat = jäsenien tiedosto
+kirjakerho/kirjat.dat = kirjojen tiedosto
+kirjakerho/lainat.dat = lainojen tiedosto
+
+= <h3>Muita tiedostoja</h3>
+build.xml = Ant-skripti joka tekee .jar:in
+.project = Eclipsen projekti
+.classpath = Eclipsen luokkapolku
+.settings/org.eclipse.jdt.core.prefs = Eclipsen kääntäjän varoitukset
+comtest.ini
+kirjakerho/.project = Eclipsen projekti
+kirjakerho/.classpath = Eclipsen luokkapolku
